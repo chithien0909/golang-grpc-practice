@@ -22,7 +22,8 @@ func main() {
 
 	log.Printf("Service client %v", client)
 	// callSum(client)
-	callPrimeNumberDecomposition(client)
+	// callPrimeNumberDecomposition(client)
+	callAverage(client)
 }
 
 func callSum(c calculatorpb.CalculatorServiceClient) {
@@ -55,4 +56,41 @@ func callPrimeNumberDecomposition(c calculatorpb.CalculatorServiceClient) {
 		}
 		log.Printf("prime number %v", resp.GetResult())
 	}
+}
+
+func callAverage(c calculatorpb.CalculatorServiceClient) {
+	log.Println("Call Average ...")
+	stream, err := c.Average(context.Background())
+
+	if err != nil {
+		log.Fatalf("Call average err %v", err)
+	}
+	listReq := []calculatorpb.AverageRequest{
+		calculatorpb.AverageRequest{
+			Num: 5,
+		},
+		calculatorpb.AverageRequest{
+			Num: 10,
+		},
+		calculatorpb.AverageRequest{
+			Num: 6,
+		},
+		calculatorpb.AverageRequest{
+			Num: 7,
+		},
+		calculatorpb.AverageRequest{
+			Num: 9,
+		},
+	}
+	for _, req := range listReq {
+		err := stream.Send(&req)
+		if err != nil {
+			log.Fatalf("Send request error %v", err)
+		}
+	}
+	resp, err := stream.CloseAndRecv()
+	if err != nil {
+		log.Fatalf("Receive average response error %v", err)
+	}
+	log.Printf("Average response %v", resp)
 }
