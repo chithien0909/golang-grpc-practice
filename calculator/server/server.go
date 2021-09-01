@@ -54,12 +54,12 @@ func (*server) Average(stream calculatorpb.CalculatorService_AverageServer) erro
 			resp := &calculatorpb.AverageResponse{
 				Result: total / float32(count),
 			}
-			stream.SendAndClose(resp)
+			return stream.SendAndClose(resp)
 		}
 		if err != nil {
 			log.Fatalf("Error while Recv Average %v", err)
 		}
-		log.Println("Receive req %v", req)
+		log.Printf("Receive req %v\n", req)
 		total += req.GetNum()
 		count++
 	}
