@@ -314,6 +314,194 @@ func (x *AverageResponse) GetResult() float32 {
 	return 0
 }
 
+type FindMaxRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Num int32 `protobuf:"varint,1,opt,name=num,proto3" json:"num,omitempty"`
+}
+
+func (x *FindMaxRequest) Reset() {
+	*x = FindMaxRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calculatorpb_calculator_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *FindMaxRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FindMaxRequest) ProtoMessage() {}
+
+func (x *FindMaxRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_calculatorpb_calculator_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FindMaxRequest.ProtoReflect.Descriptor instead.
+func (*FindMaxRequest) Descriptor() ([]byte, []int) {
+	return file_calculatorpb_calculator_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *FindMaxRequest) GetNum() int32 {
+	if x != nil {
+		return x.Num
+	}
+	return 0
+}
+
+type FindMaxResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Result int32 `protobuf:"varint,1,opt,name=result,proto3" json:"result,omitempty"`
+}
+
+func (x *FindMaxResponse) Reset() {
+	*x = FindMaxResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calculatorpb_calculator_proto_msgTypes[7]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *FindMaxResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FindMaxResponse) ProtoMessage() {}
+
+func (x *FindMaxResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_calculatorpb_calculator_proto_msgTypes[7]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FindMaxResponse.ProtoReflect.Descriptor instead.
+func (*FindMaxResponse) Descriptor() ([]byte, []int) {
+	return file_calculatorpb_calculator_proto_rawDescGZIP(), []int{7}
+}
+
+func (x *FindMaxResponse) GetResult() int32 {
+	if x != nil {
+		return x.Result
+	}
+	return 0
+}
+
+type SquareRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Num int32 `protobuf:"varint,1,opt,name=num,proto3" json:"num,omitempty"`
+}
+
+func (x *SquareRequest) Reset() {
+	*x = SquareRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calculatorpb_calculator_proto_msgTypes[8]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SquareRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SquareRequest) ProtoMessage() {}
+
+func (x *SquareRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_calculatorpb_calculator_proto_msgTypes[8]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SquareRequest.ProtoReflect.Descriptor instead.
+func (*SquareRequest) Descriptor() ([]byte, []int) {
+	return file_calculatorpb_calculator_proto_rawDescGZIP(), []int{8}
+}
+
+func (x *SquareRequest) GetNum() int32 {
+	if x != nil {
+		return x.Num
+	}
+	return 0
+}
+
+type SquareResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	SquareRoot float64 `protobuf:"fixed64,1,opt,name=squareRoot,proto3" json:"squareRoot,omitempty"`
+}
+
+func (x *SquareResponse) Reset() {
+	*x = SquareResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calculatorpb_calculator_proto_msgTypes[9]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SquareResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SquareResponse) ProtoMessage() {}
+
+func (x *SquareResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_calculatorpb_calculator_proto_msgTypes[9]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SquareResponse.ProtoReflect.Descriptor instead.
+func (*SquareResponse) Descriptor() ([]byte, []int) {
+	return file_calculatorpb_calculator_proto_rawDescGZIP(), []int{9}
+}
+
+func (x *SquareResponse) GetSquareRoot() float64 {
+	if x != nil {
+		return x.SquareRoot
+	}
+	return 0
+}
+
 var File_calculatorpb_calculator_proto protoreflect.FileDescriptor
 
 var file_calculatorpb_calculator_proto_rawDesc = []byte{
@@ -334,23 +522,47 @@ var file_calculatorpb_calculator_proto_rawDesc = []byte{
 	0x75, 0x6d, 0x18, 0x01, 0x20, 0x01, 0x28, 0x02, 0x52, 0x03, 0x6e, 0x75, 0x6d, 0x22, 0x29, 0x0a,
 	0x0f, 0x41, 0x76, 0x65, 0x72, 0x61, 0x67, 0x65, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
 	0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x02,
-	0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0xe6, 0x01, 0x0a, 0x11, 0x43, 0x61, 0x6c,
-	0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x38,
-	0x0a, 0x03, 0x53, 0x75, 0x6d, 0x12, 0x16, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74,
-	0x6f, 0x72, 0x2e, 0x53, 0x75, 0x6d, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x17, 0x2e,
-	0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x53, 0x75, 0x6d, 0x52, 0x65,
-	0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x4f, 0x0a, 0x18, 0x50, 0x72, 0x69, 0x6d,
-	0x65, 0x4e, 0x75, 0x6d, 0x62, 0x65, 0x72, 0x44, 0x65, 0x63, 0x6f, 0x6d, 0x70, 0x6f, 0x73, 0x69,
-	0x74, 0x69, 0x6f, 0x6e, 0x12, 0x16, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f,
-	0x72, 0x2e, 0x50, 0x4e, 0x44, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x17, 0x2e, 0x63,
-	0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x50, 0x4e, 0x44, 0x52, 0x65, 0x73,
-	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x30, 0x01, 0x12, 0x46, 0x0a, 0x07, 0x41, 0x76, 0x65,
-	0x72, 0x61, 0x67, 0x65, 0x12, 0x1a, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f,
-	0x72, 0x2e, 0x41, 0x76, 0x65, 0x72, 0x61, 0x67, 0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74,
-	0x1a, 0x1b, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x41, 0x76,
-	0x65, 0x72, 0x61, 0x67, 0x65, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x28,
-	0x01, 0x42, 0x10, 0x5a, 0x0e, 0x2e, 0x2f, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f,
-	0x72, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x22, 0x0a, 0x0e, 0x46, 0x69, 0x6e, 0x64,
+	0x4d, 0x61, 0x78, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x10, 0x0a, 0x03, 0x6e, 0x75,
+	0x6d, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x03, 0x6e, 0x75, 0x6d, 0x22, 0x29, 0x0a, 0x0f,
+	0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x78, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12,
+	0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52,
+	0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x21, 0x0a, 0x0d, 0x53, 0x71, 0x75, 0x61, 0x72,
+	0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x10, 0x0a, 0x03, 0x6e, 0x75, 0x6d, 0x18,
+	0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x03, 0x6e, 0x75, 0x6d, 0x22, 0x30, 0x0a, 0x0e, 0x53, 0x71,
+	0x75, 0x61, 0x72, 0x65, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x1e, 0x0a, 0x0a,
+	0x73, 0x71, 0x75, 0x61, 0x72, 0x65, 0x52, 0x6f, 0x6f, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x01,
+	0x52, 0x0a, 0x73, 0x71, 0x75, 0x61, 0x72, 0x65, 0x52, 0x6f, 0x6f, 0x74, 0x32, 0xb9, 0x03, 0x0a,
+	0x11, 0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x53, 0x65, 0x72, 0x76, 0x69,
+	0x63, 0x65, 0x12, 0x38, 0x0a, 0x03, 0x53, 0x75, 0x6d, 0x12, 0x16, 0x2e, 0x63, 0x61, 0x6c, 0x63,
+	0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x53, 0x75, 0x6d, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73,
+	0x74, 0x1a, 0x17, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x53,
+	0x75, 0x6d, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x44, 0x0a, 0x0f,
+	0x53, 0x75, 0x6d, 0x57, 0x69, 0x74, 0x68, 0x44, 0x65, 0x61, 0x64, 0x6c, 0x69, 0x6e, 0x65, 0x12,
+	0x16, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x53, 0x75, 0x6d,
+	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x17, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c,
+	0x61, 0x74, 0x6f, 0x72, 0x2e, 0x53, 0x75, 0x6d, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x22, 0x00, 0x12, 0x4f, 0x0a, 0x18, 0x50, 0x72, 0x69, 0x6d, 0x65, 0x4e, 0x75, 0x6d, 0x62, 0x65,
+	0x72, 0x44, 0x65, 0x63, 0x6f, 0x6d, 0x70, 0x6f, 0x73, 0x69, 0x74, 0x69, 0x6f, 0x6e, 0x12, 0x16,
+	0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x50, 0x4e, 0x44, 0x52,
+	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x17, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61,
+	0x74, 0x6f, 0x72, 0x2e, 0x50, 0x4e, 0x44, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
+	0x00, 0x30, 0x01, 0x12, 0x46, 0x0a, 0x07, 0x41, 0x76, 0x65, 0x72, 0x61, 0x67, 0x65, 0x12, 0x1a,
+	0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x41, 0x76, 0x65, 0x72,
+	0x61, 0x67, 0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1b, 0x2e, 0x63, 0x61, 0x6c,
+	0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x41, 0x76, 0x65, 0x72, 0x61, 0x67, 0x65, 0x52,
+	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x28, 0x01, 0x12, 0x48, 0x0a, 0x07, 0x46,
+	0x69, 0x6e, 0x64, 0x4d, 0x61, 0x78, 0x12, 0x1a, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61,
+	0x74, 0x6f, 0x72, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x78, 0x52, 0x65, 0x71, 0x75, 0x65,
+	0x73, 0x74, 0x1a, 0x1b, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e,
+	0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x78, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
+	0x00, 0x28, 0x01, 0x30, 0x01, 0x12, 0x41, 0x0a, 0x06, 0x53, 0x71, 0x75, 0x61, 0x72, 0x65, 0x12,
+	0x19, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x53, 0x71, 0x75,
+	0x61, 0x72, 0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1a, 0x2e, 0x63, 0x61, 0x6c,
+	0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x53, 0x71, 0x75, 0x61, 0x72, 0x65, 0x52, 0x65,
+	0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0x10, 0x5a, 0x0e, 0x2e, 0x2f, 0x63, 0x61,
+	0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x33,
 }
 
 var (
@@ -365,7 +577,7 @@ func file_calculatorpb_calculator_proto_rawDescGZIP() []byte {
 	return file_calculatorpb_calculator_proto_rawDescData
 }
 
-var file_calculatorpb_calculator_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_calculatorpb_calculator_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_calculatorpb_calculator_proto_goTypes = []interface{}{
 	(*SumRequest)(nil),      // 0: calculator.SumRequest
 	(*SumResponse)(nil),     // 1: calculator.SumResponse
@@ -373,16 +585,26 @@ var file_calculatorpb_calculator_proto_goTypes = []interface{}{
 	(*PNDResponse)(nil),     // 3: calculator.PNDResponse
 	(*AverageRequest)(nil),  // 4: calculator.AverageRequest
 	(*AverageResponse)(nil), // 5: calculator.AverageResponse
+	(*FindMaxRequest)(nil),  // 6: calculator.FindMaxRequest
+	(*FindMaxResponse)(nil), // 7: calculator.FindMaxResponse
+	(*SquareRequest)(nil),   // 8: calculator.SquareRequest
+	(*SquareResponse)(nil),  // 9: calculator.SquareResponse
 }
 var file_calculatorpb_calculator_proto_depIdxs = []int32{
 	0, // 0: calculator.CalculatorService.Sum:input_type -> calculator.SumRequest
-	2, // 1: calculator.CalculatorService.PrimeNumberDecomposition:input_type -> calculator.PNDRequest
-	4, // 2: calculator.CalculatorService.Average:input_type -> calculator.AverageRequest
-	1, // 3: calculator.CalculatorService.Sum:output_type -> calculator.SumResponse
-	3, // 4: calculator.CalculatorService.PrimeNumberDecomposition:output_type -> calculator.PNDResponse
-	5, // 5: calculator.CalculatorService.Average:output_type -> calculator.AverageResponse
-	3, // [3:6] is the sub-list for method output_type
-	0, // [0:3] is the sub-list for method input_type
+	0, // 1: calculator.CalculatorService.SumWithDeadline:input_type -> calculator.SumRequest
+	2, // 2: calculator.CalculatorService.PrimeNumberDecomposition:input_type -> calculator.PNDRequest
+	4, // 3: calculator.CalculatorService.Average:input_type -> calculator.AverageRequest
+	6, // 4: calculator.CalculatorService.FindMax:input_type -> calculator.FindMaxRequest
+	8, // 5: calculator.CalculatorService.Square:input_type -> calculator.SquareRequest
+	1, // 6: calculator.CalculatorService.Sum:output_type -> calculator.SumResponse
+	1, // 7: calculator.CalculatorService.SumWithDeadline:output_type -> calculator.SumResponse
+	3, // 8: calculator.CalculatorService.PrimeNumberDecomposition:output_type -> calculator.PNDResponse
+	5, // 9: calculator.CalculatorService.Average:output_type -> calculator.AverageResponse
+	7, // 10: calculator.CalculatorService.FindMax:output_type -> calculator.FindMaxResponse
+	9, // 11: calculator.CalculatorService.Square:output_type -> calculator.SquareResponse
+	6, // [6:12] is the sub-list for method output_type
+	0, // [0:6] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -466,6 +688,54 @@ func file_calculatorpb_calculator_proto_init() {
 				return nil
 			}
 		}
+		file_calculatorpb_calculator_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*FindMaxRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calculatorpb_calculator_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*FindMaxResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calculatorpb_calculator_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*SquareRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calculatorpb_calculator_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*SquareResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
@@ -473,7 +743,7 @@ func file_calculatorpb_calculator_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_calculatorpb_calculator_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   6,
+			NumMessages:   10,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
@@ -500,8 +770,11 @@ const _ = grpc.SupportPackageIsVersion6
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type CalculatorServiceClient interface {
 	Sum(ctx context.Context, in *SumRequest, opts ...grpc.CallOption) (*SumResponse, error)
+	SumWithDeadline(ctx context.Context, in *SumRequest, opts ...grpc.CallOption) (*SumResponse, error)
 	PrimeNumberDecomposition(ctx context.Context, in *PNDRequest, opts ...grpc.CallOption) (CalculatorService_PrimeNumberDecompositionClient, error)
 	Average(ctx context.Context, opts ...grpc.CallOption) (CalculatorService_AverageClient, error)
+	FindMax(ctx context.Context, opts ...grpc.CallOption) (CalculatorService_FindMaxClient, error)
+	Square(ctx context.Context, in *SquareRequest, opts ...grpc.CallOption) (*SquareResponse, error)
 }
 
 type calculatorServiceClient struct {
@@ -515,6 +788,15 @@ func NewCalculatorServiceClient(cc grpc.ClientConnInterface) CalculatorServiceCl
 func (c *calculatorServiceClient) Sum(ctx context.Context, in *SumRequest, opts ...grpc.CallOption) (*SumResponse, error) {
 	out := new(SumResponse)
 	err := c.cc.Invoke(ctx, "/calculator.CalculatorService/Sum", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *calculatorServiceClient) SumWithDeadline(ctx context.Context, in *SumRequest, opts ...grpc.CallOption) (*SumResponse, error) {
+	out := new(SumResponse)
+	err := c.cc.Invoke(ctx, "/calculator.CalculatorService/SumWithDeadline", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -587,11 +869,54 @@ func (x *calculatorServiceAverageClient) CloseAndRecv() (*AverageResponse, error
 	return m, nil
 }
 
+func (c *calculatorServiceClient) FindMax(ctx context.Context, opts ...grpc.CallOption) (CalculatorService_FindMaxClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_CalculatorService_serviceDesc.Streams[2], "/calculator.CalculatorService/FindMax", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &calculatorServiceFindMaxClient{stream}
+	return x, nil
+}
+
+type CalculatorService_FindMaxClient interface {
+	Send(*FindMaxRequest) error
+	Recv() (*FindMaxResponse, error)
+	grpc.ClientStream
+}
+
+type calculatorServiceFindMaxClient struct {
+	grpc.ClientStream
+}
+
+func (x *calculatorServiceFindMaxClient) Send(m *FindMaxRequest) error {
+	return x.ClientStream.SendMsg(m)
+}
+
+func (x *calculatorServiceFindMaxClient) Recv() (*FindMaxResponse, error) {
+	m := new(FindMaxResponse)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+func (c *calculatorServiceClient) Square(ctx context.Context, in *SquareRequest, opts ...grpc.CallOption) (*SquareResponse, error) {
+	out := new(SquareResponse)
+	err := c.cc.Invoke(ctx, "/calculator.CalculatorService/Square", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // CalculatorServiceServer is the server API for CalculatorService service.
 type CalculatorServiceServer interface {
 	Sum(context.Context, *SumRequest) (*SumResponse, error)
+	SumWithDeadline(context.Context, *SumRequest) (*SumResponse, error)
 	PrimeNumberDecomposition(*PNDRequest, CalculatorService_PrimeNumberDecompositionServer) error
 	Average(CalculatorService_AverageServer) error
+	FindMax(CalculatorService_FindMaxServer) error
+	Square(context.Context, *SquareRequest) (*SquareResponse, error)
 }
 
 // UnimplementedCalculatorServiceServer can be embedded to have forward compatible implementations.
@@ -601,11 +926,20 @@ type UnimplementedCalculatorServiceServer struct {
 func (*UnimplementedCalculatorServiceServer) Sum(context.Context, *SumRequest) (*SumResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Sum not implemented")
 }
+func (*UnimplementedCalculatorServiceServer) SumWithDeadline(context.Context, *SumRequest) (*SumResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SumWithDeadline not implemented")
+}
 func (*UnimplementedCalculatorServiceServer) PrimeNumberDecomposition(*PNDRequest, CalculatorService_PrimeNumberDecompositionServer) error {
 	return status.Errorf(codes.Unimplemented, "method PrimeNumberDecomposition not implemented")
 }
 func (*UnimplementedCalculatorServiceServer) Average(CalculatorService_AverageServer) error {
 	return status.Errorf(codes.Unimplemented, "method Average not implemented")
+}
+func (*UnimplementedCalculatorServiceServer) FindMax(CalculatorService_FindMaxServer) error {
+	return status.Errorf(codes.Unimplemented, "method FindMax not implemented")
+}
+func (*UnimplementedCalculatorServiceServer) Square(context.Context, *SquareRequest) (*SquareResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Square not implemented")
 }
 
 func RegisterCalculatorServiceServer(s *grpc.Server, srv CalculatorServiceServer) {
@@ -626,6 +960,24 @@ func _CalculatorService_Sum_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(CalculatorServiceServer).Sum(ctx, req.(*SumRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _CalculatorService_SumWithDeadline_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SumRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(CalculatorServiceServer).SumWithDeadline(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/calculator.CalculatorService/SumWithDeadline",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(CalculatorServiceServer).SumWithDeadline(ctx, req.(*SumRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -677,6 +1029,50 @@ func (x *calculatorServiceAverageServer) Recv() (*AverageRequest, error) {
 	return m, nil
 }
 
+func _CalculatorService_FindMax_Handler(srv interface{}, stream grpc.ServerStream) error {
+	return srv.(CalculatorServiceServer).FindMax(&calculatorServiceFindMaxServer{stream})
+}
+
+type CalculatorService_FindMaxServer interface {
+	Send(*FindMaxResponse) error
+	Recv() (*FindMaxRequest, error)
+	grpc.ServerStream
+}
+
+type calculatorServiceFindMaxServer struct {
+	grpc.ServerStream
+}
+
+func (x *calculatorServiceFindMaxServer) Send(m *FindMaxResponse) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func (x *calculatorServiceFindMaxServer) Recv() (*FindMaxRequest, error) {
+	m := new(FindMaxRequest)
+	if err := x.ServerStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+func _CalculatorService_Square_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SquareRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(CalculatorServiceServer).Square(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/calculator.CalculatorService/Square",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(CalculatorServiceServer).Square(ctx, req.(*SquareRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 var _CalculatorService_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "calculator.CalculatorService",
 	HandlerType: (*CalculatorServiceServer)(nil),
@@ -684,6 +1080,14 @@ var _CalculatorService_serviceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Sum",
 			Handler:    _CalculatorService_Sum_Handler,
+		},
+		{
+			MethodName: "SumWithDeadline",
+			Handler:    _CalculatorService_SumWithDeadline_Handler,
+		},
+		{
+			MethodName: "Square",
+			Handler:    _CalculatorService_Square_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{
@@ -695,6 +1099,12 @@ var _CalculatorService_serviceDesc = grpc.ServiceDesc{
 		{
 			StreamName:    "Average",
 			Handler:       _CalculatorService_Average_Handler,
+			ClientStreams: true,
+		},
+		{
+			StreamName:    "FindMax",
+			Handler:       _CalculatorService_FindMax_Handler,
+			ServerStreams: true,
 			ClientStreams: true,
 		},
 	},
